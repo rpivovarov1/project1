@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log in</title>
+            {% load static %}
+    <link rel="stylesheet" href="{% static 'reg.css' %}">
+</head>
+
+<body>
+
+    <div class="wrapper">
+            <h1>Login</h1>
+<form method="post">
+{% for field in form %}
+    <div class="fieldWrapper">
+        {% csrf_token %}
+        {{ field.errors }}<br>
+        {{ field.label_tag }} {{ field }}
+    </div>
+{% endfor %}
+    <button type="submit">Login</button>
+</form>
+            <h3><a href="http://127.0.0.1:8000/accounts/registration/">
+                Haven`t an account?</a></h3>
+    </div>
+
+</body>
+
+</html>

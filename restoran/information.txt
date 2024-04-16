@@ -1,0 +1,15 @@
+Admin{
+    name: Administrator
+    Email: jr.kurumbus@gmail.com
+    password: GoIt
+    }
+
+urls{
+    registration: http://127.0.0.1:8000/accounts/registration/
+    login: http://127.0.0.1:8000/accounts/log_in/
+    main: http://127.0.0.1:8000/main/
+    booking: http://127.0.0.1:8000/booking/
+    reset password: http://127.0.0.1:8000/accounts/reset_password/
+    profile: http://127.0.0.1:8000/accounts/profile/
+    menu: http://127.0.0.1:8000/menu/
+}

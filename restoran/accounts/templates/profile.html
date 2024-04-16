@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="{% static 'profile.css' %}">
+</head>
+<body>
+    <header>
+        <h1 class="tablo">
+        <a class="one" href="http://127.0.0.1:8000/main/">Головна</a>
+        <a class="three" href="http://127.0.0.1:8000/accounts/reset_password/">Змінити пароль</a>
+        <a class="two" href="http://127.0.0.1:8000/booking/">Забронювати столик</a>
+    </h1>
+        <div class="header">
+        <h3>ВІТАЄМО</h3>
+        <h1>{{name}}</h1>
+      </div>
+    </header>
+    <main>
+        <div class="main" style="display: flex; justify-content: space-between;">
+            <div class="info">
+                <h2>Name: {{name}}</h2>
+                <h2>Email: {{email}}</h2>
+            </div>
+            <div class="books">
+                {% for book in books %}
+                <h2>{{book}}</h2>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+        <footer>
+        <h3 style="display: flex; justify-content: space-between;">
+        <div class="footer"  >
+            <a href="vitpber://chat?number=+380631234567"><img src="{% static 'viber.png' %}" width="25px">Viber</a><br>
+            <a href="hts://t.me/example"><img src="{% static 'telegram.png' %}" width="25px">Telegram</a><br>
+            <a><img src="{% static 'phone.png' %}" width="25px">Номер телефона: +380631234567</a><br>
+        </div>
+        <div class="time">
+            Понеділок: 8:00 - 18:00 <br>
+            Вівторок: 8:00 - 18:00 <br>
+            Середа: 8:00 - 18:00 <br>
+            Четверг: 8:00 - 18:00 <br>
+            П'ятниця: 8:00 - 18:00 <br>
+            Субота: 8:00 - 18:00 <br>
+            Неділя: 8:00 - 18:00
+        </div>
+        </h3>
+    </footer>
+</body>
+</html>

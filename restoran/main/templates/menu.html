@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../static/menu.css">
+</head>
+<body>
+<header>
+    <h1 class="tablo">
+        <a class="one" href="http://127.0.0.1:8000/main/">Головна</a>
+        <a class="three" href="http://127.0.0.1:8000/accounts/reset_password/">Змінити пароль</a>
+        <a class="two" href="http://127.0.0.1:8000/booking/">Забронювати столик</a>
+    </h1>
+    <div class="header">
+        <h3>ВІТАЄМО</h3>
+        <h1>Вас у нашому ресторані</h1>
+      </div>
+</header>
+  <main>
+        <h2>
+            Перше
+        </h2>
+      {% for first in firsts %}
+        <h3>
+            Назва: {{ first.name }}<br>
+            Опис: {{ first.description }}<br>
+            Ціна: {{ first.price }} грн<br>
+        </h3>
+      {% endfor %}
+        <h2>
+            Друге
+        </h2>
+      {% for second in seconds %}
+        <h3>
+            Назва: {{ second.name }}<br>
+            Опис: {{ second.description }}<br>
+            Ціна: {{ second.price }} грн<br>
+        </h3>
+      {% endfor %}
+        <h2>
+            Салати
+        </h2>
+      {% for salat in salats%}
+        <h3>
+            Назва: {{ salat.name }}<br>
+            Опис: {{ salat.description }}<br>
+            Ціна: {{ salat.price }} грн<br>
+        </h3>
+      {% endfor %}
+        <h2>
+            Напої
+        </h2>
+      {% for napoy in napoys %}
+        <h3>
+            Назва: {{ napoy.name }}<br>
+            Опис: {{ napoy.description }}<br>
+            Ціна: {{ napoy.price }} грн<br>
+        </h3>
+      {% endfor %}
+        <h2>
+            Інше
+        </h2>
+      {% for another in enothers %}
+        <h3>
+            Назва: {{ another.name }}<br>
+            Опис: {{ another.description }}<br>
+            Ціна: {{ another.price }} грн<br>
+        </h3>
+      {% endfor %}
+  </main>
+    <footer>
+        <h3 style="display: flex; justify-content: space-between;">
+        <div class="footer"  >
+            <a href="vitpber://chat?number=+380631234567"><img src="../static/viber.png" width="25px">Viber</a><br>
+            <a href="hts://t.me/example"><img src="../static/telegram.png" width="25px">Telegram</a><br>
+            <a><img src="../static/phone.png" width="25px">Номер телефона: +380631234567</a><br>
+        </div>
+        <div class="time">
+            Понеділок: 8:00 - 18:00 <br>
+            Вівторок: 8:00 - 18:00 <br>
+            Середа: 8:00 - 18:00 <br>
+            Четверг: 8:00 - 18:00 <br>
+            П'ятниця: 8:00 - 18:00 <br>
+            Субота: 8:00 - 18:00 <br>
+            Неділя: 8:00 - 18:00
+        </div>
+        </h3>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+header h1 {
+    color: white;
+}
+
+.tablo{
+    background-color: rgb(35 40 50 / 85%);
+    top: 0px;
+    position: fixed;
+    width: 98%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    z-index: 9999;
+}
+
+.one, .two, .three {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.one {
+    float: left;
+}
+
+.two {
+    text-align: center;
+}
+
+.three {
+    float: right;
+}
+
+h1 {
+    margin: 0px;
+}
+
+.header {
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+body{
+    background-color: black;
+}
+
+.about{
+    width: 40%;
+    margin-right: 30%;
+    margin-left: 30%;
+    box-sizing: border-box;
+    color: #939393;
+    line-height: 36px;
+}
+
+header h3{
+    color: #A78963;
+}
+
+main{
+    text-align: center;
+}
+
+.menu img{
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.fot{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+form{
+    padding-top: 10px;
+    color: white;
+    background-color: #1a1a1a;
+    border: solid 1px; #1a1a1a;
+    border-radius: 50px;
+}
+
+footer{
+    margin-top: 20px;
+    background-color: #1a1a1a;
+    border: solid 1px; #1a1a1a;
+    border-radius: 50px;
+}
+
+footer h3{
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+}
